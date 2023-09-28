@@ -1,0 +1,138 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Inter', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: #0c1117;
+    width: 100vw;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 20px 10px;
+}
+
+#nav-menu {
+    transition: all 0.5s ease;
+}
+
+.nav-title {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.nav-links a {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.nav-title span {
+    transition: color 0.2s ease;
+    cursor: pointer;
+}
+
+.nav-route button {
+    padding: 5px 15px;
+    font-size: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#nav-mobile-route ul li:first-child {
+    border-top: 1px solid #cbd5e0;
+}
+
+#nav-mobile-route ul li {
+    line-height: 1;
+    color: #0c1117;
+    padding: 10px;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #cbd5e0;
+}
+
+
+.nav-title span:hover {
+    color: #3a715f;
+}
+
+.nav-links a:hover {
+    color: #3a715f;
+}
+
+.nav-route button:hover {
+    background-color: #3a715f;
+    color: #f3f3f3;
+}
+
+#nav-mobile-route ul li:hover {
+    background-color: #3a715f;
+    color: #f3f3f3;
+}
+
+@media screen and (max-width: 430px) {
+    .nav-links, .nav-route, .nav-mobile-route {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 431px) {
+    .nav-icon, .nav-mobile-route {
+        display: none;
+    }
+}
+
+/* toggle */
+.show-item {
+    display: none;
+}
+
+/* animation */
+
+.rotate {
+    transform: rotate(-90deg);
+    transform-origin: 100% 50%;
+}
