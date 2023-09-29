@@ -12,8 +12,6 @@ nav_menu.addEventListener('click', () => {
 const watchScreenWidth = () => {
     if(width > 430) {
         nav_mobile_menu.style.display = 'none';
-    } else {
-        nav_mobile_menu.classList.add('show-item');
     }
 }
 
